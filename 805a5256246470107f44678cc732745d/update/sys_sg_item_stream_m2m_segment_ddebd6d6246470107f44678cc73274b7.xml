@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_segment">
+    <sys_sg_item_stream_m2m_segment action="INSERT_OR_UPDATE">
+        <item_stream display_value="Car Hire Item Stream">d5ebd6d6246470107f44678cc73274b7</item_stream>
+        <segment display_value="Car Hire Item Stream Segment">5debd6d6246470107f44678cc73274b6</segment>
+        <sys_class_name>sys_sg_item_stream_m2m_segment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 07:10:45</sys_created_on>
+        <sys_id>ddebd6d6246470107f44678cc73274b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Hire Management" source="x_cdltd_car_hire">805a5256246470107f44678cc732745d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name>sys_sg_item_stream_m2m_segment_ddebd6d6246470107f44678cc73274b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 07:10:45</sys_updated_on>
+    </sys_sg_item_stream_m2m_segment>
+</record_update>

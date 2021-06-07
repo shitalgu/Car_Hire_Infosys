@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="Edit Button (Car Hire)">5debd6d6246470107f44678cc73274db</button>
+        <item_parameter display_value="Car Hire business_service">d1ebd6d6246470107f44678cc73274db</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 07:10:45</sys_created_on>
+        <sys_id>99ebd6d6246470107f44678cc73274e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>d1ebd6d6246470107f44678cc73274db</sys_name>
+        <sys_package display_value="Car Hire Management" source="x_cdltd_car_hire">805a5256246470107f44678cc732745d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_99ebd6d6246470107f44678cc73274e0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 07:10:45</sys_updated_on>
+        <ui_parameter display_value="Service">99ebd6d6246470107f44678cc73274de</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_screen_field">
+    <sys_sg_screen_field action="INSERT_OR_UPDATE">
+        <data_item_field_name>cmdb_ci</data_item_field_name>
+        <description_text/>
+        <description_text_field/>
+        <description_text_type/>
+        <field_name/>
+        <hidden>false</hidden>
+        <order>90</order>
+        <record_id_field/>
+        <screen display_value="Details">1debd6d6246470107f44678cc73274b5</screen>
+        <screen_data_item_table>x_cdltd_car_hire_car_hire</screen_data_item_table>
+        <sys_class_name>sys_sg_screen_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 07:10:45</sys_created_on>
+        <sys_id>ddebd6d6246470107f44678cc73274d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cmdb_ci</sys_name>
+        <sys_package display_value="Car Hire Management" source="x_cdltd_car_hire">805a5256246470107f44678cc732745d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name>sys_sg_screen_field_ddebd6d6246470107f44678cc73274d7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 07:10:45</sys_updated_on>
+        <type>auto</type>
+        <value_only>false</value_only>
+    </sys_sg_screen_field>
+    <sys_translated_text action="delete_multiple" query="documentkey=ddebd6d6246470107f44678cc73274d7"/>
+</record_update>

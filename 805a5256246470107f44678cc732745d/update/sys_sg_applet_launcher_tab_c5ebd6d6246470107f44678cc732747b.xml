@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher_tab">
+    <sys_sg_applet_launcher_tab action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applet_launcher display_value="Car Hire Management">45eb12d6246470107f44678cc732740b</applet_launcher>
+        <icon display_value="Home Car Hire Management">09ebd6d6246470107f44678cc732747b</icon>
+        <label>Car Hire Management</label>
+        <roles>x_cdltd_car_hire.user</roles>
+        <sys_class_name>sys_sg_applet_launcher_tab</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 07:10:44</sys_created_on>
+        <sys_id>c5ebd6d6246470107f44678cc732747b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Car Hire Management</sys_name>
+        <sys_package display_value="Car Hire Management" source="x_cdltd_car_hire">805a5256246470107f44678cc732745d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_tab_c5ebd6d6246470107f44678cc732747b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 07:10:44</sys_updated_on>
+    </sys_sg_applet_launcher_tab>
+</record_update>

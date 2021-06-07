@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 08:29:57</sys_created_on>
+        <sys_id>a10e6ed224a470107f44678cc7327442</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_cdltd_car_hire_car.x_cdltd_car_hire.car_user</sys_name>
+        <sys_package display_value="Car Hire Management" source="x_cdltd_car_hire">805a5256246470107f44678cc732745d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_security_acl display_value="x_cdltd_car_hire_car">e10e6ed224a470107f44678cc732743f</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_a10e6ed224a470107f44678cc7327442</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 08:29:57</sys_updated_on>
+        <sys_user_role display_value="x_cdltd_car_hire.car_user" name="x_cdltd_car_hire.car_user">590eea9224a470107f44678cc7327412</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>
