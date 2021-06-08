@@ -1,12 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Car Hire" max_length="40" name="x_cdltd_car_hire_car_hire" type="collection">
-        <element choice="1" label="Brand Name" max_length="40" name="brand_name" type="choice">
-            <choice/>
+    <element extends="task" label="Car Hire" max_length="40" name="x_cdltd_car_hire_car_hire" sizeclass="4" type="collection">
+        <element choice="1" hint="Select the brand of the car you like" label="Brand Name" max_length="40" name="brand_name" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Volkswagen" sequence="0" value="Volkswagen"/>
+                <element inactive_on_update="false" label="Maruti" sequence="1" value="Maruti"/>
+            </choice>
         </element>
         <element choice="1" label="Car Name" max_length="40" name="car_name" type="choice">
-            <choice/>
+            <choice>
+                <element inactive_on_update="false" label="T-roc" value="troc"/>
+                <element inactive_on_update="false" label="Venue" value="venue"/>
+                <element inactive_on_update="false" label="Verna" value="verna"/>
+                <element inactive_on_update="false" label="Ventro" sequence="0" value="vento"/>
+                <element inactive_on_update="false" label="Creta" sequence="1" value="creta"/>
+                <element inactive_on_update="false" label="Zeep" sequence="2" value="zeep"/>
+            </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Drop Off Time" max_length="40" name="drop_off_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Fuel Type" max_length="40" name="fuel_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="Pick up Time" max_length="40" name="pick_up_time" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="Requested for" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Travel Type" max_length="40" name="travel_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Contact Number" max_length="40" name="u_string_4" type="string"/>
     </element>
 </database>
