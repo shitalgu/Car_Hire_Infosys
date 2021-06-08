@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="location_to_be_used" label="Location to be used" language="en" table="x_cdltd_car_hire_car_hire">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>location_to_be_used</element>
+            <help/>
+            <hint/>
+            <label>Location to be used</label>
+            <language>en</language>
+            <name>x_cdltd_car_hire_car_hire</name>
+            <plural>Location to be used</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-06-08 04:08:57</sys_created_on>
+            <sys_id>84eb32a62460b0107f44678cc732742d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Location to be used</sys_name>
+            <sys_package display_value="Car Hire Management" source="x_cdltd_car_hire">805a5256246470107f44678cc732745d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+            <sys_update_name>sys_documentation_x_cdltd_car_hire_car_hire_location_to_be_used_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-06-08 04:08:57</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

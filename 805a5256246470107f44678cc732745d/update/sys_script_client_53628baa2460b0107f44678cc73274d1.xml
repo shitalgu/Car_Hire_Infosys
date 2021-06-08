@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>brand_name</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Alert</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script be low
+   alert("Thank you for sumbmitting the Car Hire Record" + g_scratchpad.requested_for_name +" You will receive the email shortly");
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 04:42:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>53628baa2460b0107f44678cc73274d1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Alert</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Hire Management" source="x_cdltd_car_hire">805a5256246470107f44678cc732745d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name>sys_script_client_53628baa2460b0107f44678cc73274d1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 05:02:13</sys_updated_on>
+        <table>x_cdltd_car_hire_car_hire</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-06-07 10:59:46</sys_created_on>
-            <sys_id>7f40939e24e470107f44678cc7327454</sys_id>
+            <sys_created_on>2021-06-08 04:08:58</sys_created_on>
+            <sys_id>48eb32a62460b0107f44678cc7327439</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_cdltd_car_hire_car_hire" sys_domain="global" view="06c34242f43220107f4446973d0adbd8">bf40939e24e470107f44678cc7327420</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-06-07 10:59:46</sys_updated_on>
+            <sys_updated_on>2021-06-08 04:08:58</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>pick_up_time</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-06-07 10:59:46</sys_created_on>
-            <sys_id>ff40939e24e470107f44678cc7327454</sys_id>
+            <sys_created_on>2021-06-08 04:08:58</sys_created_on>
+            <sys_id>cceb32a62460b0107f44678cc7327439</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_cdltd_car_hire_car_hire" sys_domain="global" view="06c34242f43220107f4446973d0adbd8">bf40939e24e470107f44678cc7327420</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-06-07 10:59:46</sys_updated_on>
+            <sys_updated_on>2021-06-08 04:08:58</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,69 +32,83 @@
             <element>location</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-06-07 10:59:46</sys_created_on>
-            <sys_id>7340939e24e470107f44678cc7327455</sys_id>
+            <sys_created_on>2021-06-08 04:08:58</sys_created_on>
+            <sys_id>40eb32a62460b0107f44678cc732743a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_cdltd_car_hire_car_hire" sys_domain="global" view="06c34242f43220107f4446973d0adbd8">bf40939e24e470107f44678cc7327420</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-06-07 10:59:46</sys_updated_on>
+            <sys_updated_on>2021-06-08 04:08:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location_to_be_used</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-06-08 04:08:58</sys_created_on>
+            <sys_id>c0eb32a62460b0107f44678cc732743a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cdltd_car_hire_car_hire" sys_domain="global" view="06c34242f43220107f4446973d0adbd8">bf40939e24e470107f44678cc7327420</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-06-08 04:08:58</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>short_description</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-06-07 10:59:46</sys_created_on>
-            <sys_id>f340939e24e470107f44678cc7327455</sys_id>
+            <sys_created_on>2021-06-08 04:08:58</sys_created_on>
+            <sys_id>44eb32a62460b0107f44678cc732743a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_cdltd_car_hire_car_hire" sys_domain="global" view="06c34242f43220107f4446973d0adbd8">bf40939e24e470107f44678cc7327420</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-06-07 10:59:46</sys_updated_on>
+            <sys_updated_on>2021-06-08 04:08:58</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-06-07 10:59:46</sys_created_on>
-            <sys_id>7740939e24e470107f44678cc7327455</sys_id>
+            <sys_created_on>2021-06-08 04:08:58</sys_created_on>
+            <sys_id>c4eb32a62460b0107f44678cc732743a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_cdltd_car_hire_car_hire" sys_domain="global" view="06c34242f43220107f4446973d0adbd8">bf40939e24e470107f44678cc7327420</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-06-07 10:59:46</sys_updated_on>
+            <sys_updated_on>2021-06-08 04:08:58</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>travel_type</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-06-07 10:59:46</sys_created_on>
-            <sys_id>f740939e24e470107f44678cc7327455</sys_id>
+            <sys_created_on>2021-06-08 04:08:58</sys_created_on>
+            <sys_id>48eb32a62460b0107f44678cc732743a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_cdltd_car_hire_car_hire" sys_domain="global" view="06c34242f43220107f4446973d0adbd8">bf40939e24e470107f44678cc7327420</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-06-07 10:59:46</sys_updated_on>
+            <sys_updated_on>2021-06-08 04:08:58</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>drop_off_time</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-06-07 10:59:46</sys_created_on>
-            <sys_id>7b40939e24e470107f44678cc7327455</sys_id>
+            <sys_created_on>2021-06-08 04:08:58</sys_created_on>
+            <sys_id>c8eb32a62460b0107f44678cc732743a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_cdltd_car_hire_car_hire" sys_domain="global" view="06c34242f43220107f4446973d0adbd8">bf40939e24e470107f44678cc7327420</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-06-07 10:59:46</sys_updated_on>
+            <sys_updated_on>2021-06-08 04:08:58</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
