@@ -16,6 +16,7 @@
                 <element inactive_on_update="false" label="Zeep" sequence="2" value="zeep"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" label="Color" max_length="40" name="color" type="color"/>
         <element attributes="edge_encryption_enabled=true" label="Drop Off Time" max_length="40" name="drop_off_time" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Fuel Type" max_length="40" name="fuel_type" type="string">
             <choice>
