@@ -1,0 +1,1772 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-quebec-12-09-2020__patch1-02-18-2021</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>car_hire_dl_validation</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.pick_up_time","label":"Trigger➛Car Hire Record➛Pick up Time","reference":"","reference_display":"Pick up Time","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_cdltd_car_hire_car_hire","column_name":"pick_up_time"},{"name":"Created or Updated_1.current.requested_for.name","label":"Trigger➛Car Hire Record➛Requested for➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"Created or Updated_1.current.requested_for.email","label":"Trigger➛Car Hire Record➛Requested for➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"411571b7-bf3e-48e8-9f90-4ca5184354b0.email","label":"5➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f5b9ce71-01ef-4d13-85d6-c3c55735216d.table_name","label":"3➛Task Table","reference":"task","reference_display":"Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f5b9ce71-01ef-4d13-85d6-c3c55735216d.record","label":"3➛Task Record","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57c4c52c-ace8-4228-8024-2ac73abd8af3.Table","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57c4c52c-ace8-4228-8024-2ac73abd8af3.Record","label":"3➛Record","reference":"task","reference_display":"Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.a143007a2424b0107f44678cc7327432}}","label":"DL Validation","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"Created or Updated_1.current.requested_for.manager","label":"Trigger➛Car Hire Record➛Requested for➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"{{static.a8f98bb0eb32010045e1a5115206fe3a}}","label":"Abraham Lincoln","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"Created or Updated_1.current","label":"Trigger➛Car Hire Record","reference":"x_cdltd_car_hire_car_hire","reference_display":"Car Hire","type":"reference","base_type":"reference","attributes":{}},{"name":"eb698d12-884c-4125-aaa4-1267df0e1432.approval_state","label":"1➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot>87dc10fa2464b0107f44678cc7327417</latest_snapshot>
+        <master_snapshot>9c67443e2424b0107f44678cc732741f</master_snapshot>
+        <name>Car Hire DL Validation</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>bc67443e2424b0107f44678cc73274e7</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:20:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d0234c3a2424b0107f44678cc73274f5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Car Hire DL Validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Hire Management" source="x_cdltd_car_hire">805a5256246470107f44678cc732745d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name>sys_hub_flow_d0234c3a2424b0107f44678cc73274f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:53</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=d0234c3a2424b0107f44678cc73274f5"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d0234c3a2424b0107f44678cc73274f5"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_cdltd_car_hire_car_hire">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bc67443e2424b0107f44678cc73274e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:53</sys_updated_on>
+        <table>x_cdltd_car_hire_car_hire</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"f867443e2424b0107f44678cc73274e8","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>d0234c3a2424b0107f44678cc73274f5</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:53</sys_created_on>
+        <sys_id>f867443e2424b0107f44678cc73274e8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:53</sys_updated_on>
+        <trigger display_value="">bc67443e2424b0107f44678cc73274e7</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>f867443e2424b0107f44678cc73274e8</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:53</sys_created_on>
+        <sys_id>f067443e2424b0107f44678cc73274e9</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=d0234c3a2424b0107f44678cc73274f5^sys_idNOT INf867443e2424b0107f44678cc73274e8"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=d0234c3a2424b0107f44678cc73274f5^sys_idNOT IN7826ccba2424b0107f44678cc732746a"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Car Hire DL Validation">d0234c3a2424b0107f44678cc73274f5</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>7826ccba2424b0107f44678cc732746a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:53</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7826ccba2424b0107f44678cc732746a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>7826ccba2424b0107f44678cc732746a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>3c26ccba2424b0107f44678cc732746b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:25</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>7826ccba2424b0107f44678cc732746a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>b426ccba2424b0107f44678cc732746c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:25</sys_updated_on>
+        <value>x_cdltd_car_hire_car_hire</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d0234c3a2424b0107f44678cc73274f5^sys_idNOT IN14234c3a2424b0107f44678cc73274f8"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d0234c3a2424b0107f44678cc73274f5</id>
+        <name>Car Hire DL Validation</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:20:16</sys_created_on>
+        <sys_id>14234c3a2424b0107f44678cc73274f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:20:16</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=d0234c3a2424b0107f44678cc73274f5^sys_idNOT IN3426ccba2424b0107f44678cc7327448,7426ccba2424b0107f44678cc7327463,b826ccba2424b0107f44678cc732745d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Car Hire DL Validation">d0234c3a2424b0107f44678cc73274f5</model>
+        <model_id>d0234c3a2424b0107f44678cc73274f5</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d0234c3a2424b0107f44678cc73274f5</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>3426ccba2424b0107f44678cc7327448</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Car Hire DL Validation">d0234c3a2424b0107f44678cc73274f5</model>
+        <model_id>d0234c3a2424b0107f44678cc73274f5</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d0234c3a2424b0107f44678cc73274f5</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>7426ccba2424b0107f44678cc7327463</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD7067443ea824b010951b36ebb02e35fd,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Car Hire DL Validation">d0234c3a2424b0107f44678cc73274f5</model>
+        <model_id>d0234c3a2424b0107f44678cc73274f5</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d0234c3a2424b0107f44678cc73274f5</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>b826ccba2424b0107f44678cc732745d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=d0234c3a2424b0107f44678cc73274f5^sys_idNOT IN4126ccba2424b0107f44678cc732748c,b026ccba2424b0107f44678cc7327472,c126ccba2424b0107f44678cc7327480"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Car Hire DL Validation">d0234c3a2424b0107f44678cc73274f5</flow>
+        <order>5</order>
+        <parent_ui_id>540ca4f6-3932-4727-a38d-f9d3e74d55d4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:26</sys_created_on>
+        <sys_id>4126ccba2424b0107f44678cc732748c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 11:12:42</sys_updated_on>
+        <ui_id>411571b7-bf3e-48e8-9f90-4ca5184354b0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4126ccba2424b0107f44678cc732748c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4126ccba2424b0107f44678cc732748c</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:26</sys_created_on>
+        <sys_id>c926ccba2424b0107f44678cc732748e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:26</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4126ccba2424b0107f44678cc732748c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>4126ccba2424b0107f44678cc732748c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:26</sys_created_on>
+        <sys_id>8526ccba2424b0107f44678cc732748e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Details-&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:30e1db33-3988-42fc-90fb-3b8da1f5bfb0}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:30e1db33-3988-42fc-90fb-3b8da1f5bfb0}}"&gt;&lt;span class="data-pill-content-container"&gt;Trigger&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;Car Hire Record&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;Pick up Time&lt;button id="transform_function_facade_30e1db33-3988-42fc-90fb-3b8da1f5bfb0" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>4126ccba2424b0107f44678cc732748c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:26</sys_created_on>
+        <sys_id>4926ccba2424b0107f44678cc732748e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>Your Request{{Created or Updated_1.current.requested_for.name}} of hiring the Car is rejected</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>4126ccba2424b0107f44678cc732748c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:26</sys_created_on>
+        <sys_id>c126ccba2424b0107f44678cc732748e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created or Updated_1.current.requested_for.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Car Hire DL Validation">d0234c3a2424b0107f44678cc73274f5</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>b026ccba2424b0107f44678cc7327472</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 11:12:42</sys_updated_on>
+        <ui_id>eb698d12-884c-4125-aaa4-1267df0e1432</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b026ccba2424b0107f44678cc7327472"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b026ccba2424b0107f44678cc7327472</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>3c26ccba2424b0107f44678cc7327476</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:25</sys_updated_on>
+        <value>x_cdltd_car_hire_car_hire</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b026ccba2424b0107f44678cc7327472</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>7826ccba2424b0107f44678cc7327476</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:25</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b026ccba2424b0107f44678cc7327472</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>b426ccba2424b0107f44678cc7327476</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:25</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b026ccba2424b0107f44678cc7327472</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>f026ccba2424b0107f44678cc7327476</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:25</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b026ccba2424b0107f44678cc7327472"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>b026ccba2424b0107f44678cc7327472</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>bc26ccba2424b0107f44678cc7327475</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyG[{{static.a143007a2424b0107f44678cc7327432}}]OrRejectsAnyG[{{static.a143007a2424b0107f44678cc7327432}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>b026ccba2424b0107f44678cc7327472</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>3c26ccba2424b0107f44678cc7327474</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>b026ccba2424b0107f44678cc7327472</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>f826ccba2424b0107f44678cc7327475</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>b026ccba2424b0107f44678cc7327472</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>7426ccba2424b0107f44678cc7327475</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>b026ccba2424b0107f44678cc7327472</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>3826ccba2424b0107f44678cc7327475</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>b026ccba2424b0107f44678cc7327472</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>7026ccba2424b0107f44678cc7327476</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Car Hire DL Validation">d0234c3a2424b0107f44678cc73274f5</flow>
+        <order>3</order>
+        <parent_ui_id>db0d9839-69e8-4723-a55c-785455c367d2</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:26</sys_created_on>
+        <sys_id>c126ccba2424b0107f44678cc7327480</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 11:12:42</sys_updated_on>
+        <ui_id>f5b9ce71-01ef-4d13-85d6-c3c55735216d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c126ccba2424b0107f44678cc7327480"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c126ccba2424b0107f44678cc7327480</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:26</sys_created_on>
+        <sys_id>4126ccba2424b0107f44678cc7327482</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:26</sys_updated_on>
+        <value>task</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c126ccba2424b0107f44678cc7327480</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:26</sys_created_on>
+        <sys_id>8d26ccba2424b0107f44678cc7327481</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:26</sys_updated_on>
+        <value>short_description=Please provide the car to user^assignment_group={"display":"Help Desk","value":"679434f053231300e321ddeeff7b12d8"}^state=2</value>
+        <variable display_value="Fields">6de09916c31332002841b63b12d3ae1b</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=d0234c3a2424b0107f44678cc73274f5^sys_idNOT IN4d26ccba2424b0107f44678cc7327482,8d26ccba2424b0107f44678cc7327477"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c526ccba2424b0107f44678cc7327482</block>
+        <comment/>
+        <connected_to>db0d9839-69e8-4723-a55c-785455c367d2</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Car Hire DL Validation">d0234c3a2424b0107f44678cc73274f5</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:26</sys_created_on>
+        <sys_id>4d26ccba2424b0107f44678cc7327482</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:53</sys_updated_on>
+        <ui_id>540ca4f6-3932-4727-a38d-f9d3e74d55d4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4d26ccba2424b0107f44678cc7327482"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4d26ccba2424b0107f44678cc7327482</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:26</sys_created_on>
+        <sys_id>8126ccba2424b0107f44678cc7327486</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:26</sys_updated_on>
+        <value>Rejected</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4d26ccba2424b0107f44678cc7327482"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>4d26ccba2424b0107f44678cc7327482</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:26</sys_created_on>
+        <sys_id>0126ccba2424b0107f44678cc7327486</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:26</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{eb698d12-884c-4125-aaa4-1267df0e1432.approval_state}}=rejected</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>4d26ccba2424b0107f44678cc7327482</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:26</sys_created_on>
+        <sys_id>4d26ccba2424b0107f44678cc7327485</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:26</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b026ccba2424b0107f44678cc7327477</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Car Hire DL Validation">d0234c3a2424b0107f44678cc73274f5</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>8d26ccba2424b0107f44678cc7327477</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:53</sys_updated_on>
+        <ui_id>db0d9839-69e8-4723-a55c-785455c367d2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8d26ccba2424b0107f44678cc7327477"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>8d26ccba2424b0107f44678cc7327477</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:26</sys_created_on>
+        <sys_id>8526ccba2424b0107f44678cc732747c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:26</sys_updated_on>
+        <value>Approved</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8d26ccba2424b0107f44678cc7327477"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>8d26ccba2424b0107f44678cc7327477</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:26</sys_created_on>
+        <sys_id>0526ccba2424b0107f44678cc732747c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:26</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{eb698d12-884c-4125-aaa4-1267df0e1432.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>8d26ccba2424b0107f44678cc7327477</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:26</sys_created_on>
+        <sys_id>4126ccba2424b0107f44678cc732747c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:26</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=d0234c3a2424b0107f44678cc73274f5^sys_idNOT IN8526ccba2424b0107f44678cc7327491"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>d0234c3a2424b0107f44678cc73274f5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.pick_up_time}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:26</sys_created_on>
+        <sys_id>8526ccba2424b0107f44678cc7327491</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>30e1db33-3988-42fc-90fb-3b8da1f5bfb0</ui_id>
+    </sys_hub_pill_compound>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d0234c3a2424b0107f44678cc73274f5^sys_idNOT IN7426ccba2424b0107f44678cc7327467,fc26ccba2424b0107f44678cc732745b,fc26ccba2424b0107f44678cc7327461"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d0234c3a2424b0107f44678cc73274f5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>7426ccba2424b0107f44678cc7327467</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Hire Management" source="x_cdltd_car_hire">805a5256246470107f44678cc732745d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d0234c3a2424b0107f44678cc73274f5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>fc26ccba2424b0107f44678cc732745b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Hire Management" source="x_cdltd_car_hire">805a5256246470107f44678cc732745d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d0234c3a2424b0107f44678cc73274f5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:33:25</sys_created_on>
+        <sys_id>fc26ccba2424b0107f44678cc7327461</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Hire Management" source="x_cdltd_car_hire">805a5256246470107f44678cc732745d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:33:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=d0234c3a2424b0107f44678cc73274f5^sys_idNOT IN7067443e2424b0107f44678cc73274ea"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"7067443e2424b0107f44678cc73274ea","name":"plan"}}</plan>
+        <plan_id>d0234c3a2424b0107f44678cc73274f5</plan_id>
+        <snapshot>87dc10fa2464b0107f44678cc7327417</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7067443e2424b0107f44678cc73274ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:53</sys_updated_on>
+        <trigger display_value="">bc67443e2424b0107f44678cc73274e7</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>car_hire_dl_validation</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.pick_up_time","label":"Trigger➛Car Hire Record➛Pick up Time","reference":"","reference_display":"Pick up Time","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_cdltd_car_hire_car_hire","column_name":"pick_up_time"},{"name":"Created or Updated_1.current.requested_for.name","label":"Trigger➛Car Hire Record➛Requested for➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"Created or Updated_1.current.requested_for.email","label":"Trigger➛Car Hire Record➛Requested for➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"411571b7-bf3e-48e8-9f90-4ca5184354b0.email","label":"5➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f5b9ce71-01ef-4d13-85d6-c3c55735216d.table_name","label":"3➛Task Table","reference":"task","reference_display":"Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f5b9ce71-01ef-4d13-85d6-c3c55735216d.record","label":"3➛Task Record","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57c4c52c-ace8-4228-8024-2ac73abd8af3.Table","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57c4c52c-ace8-4228-8024-2ac73abd8af3.Record","label":"3➛Record","reference":"task","reference_display":"Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.a143007a2424b0107f44678cc7327432}}","label":"DL Validation","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"Created or Updated_1.current.requested_for.manager","label":"Trigger➛Car Hire Record➛Requested for➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"{{static.a8f98bb0eb32010045e1a5115206fe3a}}","label":"Abraham Lincoln","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"Created or Updated_1.current","label":"Trigger➛Car Hire Record","reference":"x_cdltd_car_hire_car_hire","reference_display":"Car Hire","type":"reference","base_type":"reference","attributes":{}},{"name":"eb698d12-884c-4125-aaa4-1267df0e1432.approval_state","label":"1➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Car Hire DL Validation</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Car Hire DL Validation">d0234c3a2424b0107f44678cc73274f5</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9c67443e2424b0107f44678cc732741f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:51</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=9c67443e2424b0107f44678cc732741f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9c67443e2424b0107f44678cc732741f"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=9c67443e2424b0107f44678cc732741f^sys_idNOT INe467443e2424b0107f44678cc73274b2"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Car Hire DL Validation">9c67443e2424b0107f44678cc732741f</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>e467443e2424b0107f44678cc73274b2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:53</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e467443e2424b0107f44678cc73274b2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>e467443e2424b0107f44678cc73274b2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>2067443e2424b0107f44678cc73274b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>e467443e2424b0107f44678cc73274b2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>e067443e2424b0107f44678cc73274b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <value>x_cdltd_car_hire_car_hire</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9c67443e2424b0107f44678cc732741f^sys_idNOT IN5867443e2424b0107f44678cc7327420"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9c67443e2424b0107f44678cc732741f</id>
+        <name>Car Hire DL Validation</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:51</sys_created_on>
+        <sys_id>5867443e2424b0107f44678cc7327420</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:51</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=9c67443e2424b0107f44678cc732741f^sys_idNOT IN1467443e2424b0107f44678cc7327437,5c67443e2424b0107f44678cc7327423,d467443e2424b0107f44678cc7327441"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD9867443e9a24b0107ed976a557336521,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Car Hire DL Validation">9c67443e2424b0107f44678cc732741f</model>
+        <model_id>9c67443e2424b0107f44678cc732741f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9c67443e2424b0107f44678cc732741f</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:51</sys_created_on>
+        <sys_id>1467443e2424b0107f44678cc7327437</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Car Hire DL Validation">9c67443e2424b0107f44678cc732741f</model>
+        <model_id>9c67443e2424b0107f44678cc732741f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9c67443e2424b0107f44678cc732741f</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:51</sys_created_on>
+        <sys_id>5c67443e2424b0107f44678cc7327423</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Car Hire DL Validation">9c67443e2424b0107f44678cc732741f</model>
+        <model_id>9c67443e2424b0107f44678cc732741f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9c67443e2424b0107f44678cc732741f</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:51</sys_created_on>
+        <sys_id>d467443e2424b0107f44678cc7327441</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=9c67443e2424b0107f44678cc732741f^sys_idNOT IN2c67443e2424b0107f44678cc732749c,a867443e2424b0107f44678cc73274af,e867443e2424b0107f44678cc73274a5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Car Hire DL Validation">9c67443e2424b0107f44678cc732741f</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>2c67443e2424b0107f44678cc732749c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <ui_id>eb698d12-884c-4125-aaa4-1267df0e1432</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2c67443e2424b0107f44678cc732749c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2c67443e2424b0107f44678cc732749c</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>2c67443e2424b0107f44678cc732749f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2c67443e2424b0107f44678cc732749c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>6467443e2424b0107f44678cc73274a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <value>x_cdltd_car_hire_car_hire</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2c67443e2424b0107f44678cc732749c</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>a067443e2424b0107f44678cc73274a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2c67443e2424b0107f44678cc732749c</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>ec67443e2424b0107f44678cc732749f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2c67443e2424b0107f44678cc732749c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>2c67443e2424b0107f44678cc732749c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>e467443e2424b0107f44678cc732749f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyG[{{static.a143007a2424b0107f44678cc7327432}}]OrRejectsAnyG[{{static.a143007a2424b0107f44678cc7327432}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>2c67443e2424b0107f44678cc732749c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>e867443e2424b0107f44678cc732749e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>2c67443e2424b0107f44678cc732749c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>2467443e2424b0107f44678cc732749f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>2c67443e2424b0107f44678cc732749c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>ac67443e2424b0107f44678cc732749e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>2c67443e2424b0107f44678cc732749c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>6067443e2424b0107f44678cc732749f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>2c67443e2424b0107f44678cc732749c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>a867443e2424b0107f44678cc732749f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Car Hire DL Validation">9c67443e2424b0107f44678cc732741f</flow>
+        <order>5</order>
+        <parent_ui_id>540ca4f6-3932-4727-a38d-f9d3e74d55d4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>a867443e2424b0107f44678cc73274af</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <ui_id>411571b7-bf3e-48e8-9f90-4ca5184354b0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a867443e2424b0107f44678cc73274af"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a867443e2424b0107f44678cc73274af</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>6067443e2424b0107f44678cc73274b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a867443e2424b0107f44678cc73274af"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>a867443e2424b0107f44678cc73274af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>2c67443e2424b0107f44678cc73274b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Details-&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:30e1db33-3988-42fc-90fb-3b8da1f5bfb0}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:30e1db33-3988-42fc-90fb-3b8da1f5bfb0}}"&gt;&lt;span class="data-pill-content-container"&gt;Trigger&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;Car Hire Record&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;Pick up Time&lt;button id="transform_function_facade_30e1db33-3988-42fc-90fb-3b8da1f5bfb0" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>a867443e2424b0107f44678cc73274af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>ec67443e2424b0107f44678cc73274b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>Your Request{{Created or Updated_1.current.requested_for.name}} of hiring the Car is rejected</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>a867443e2424b0107f44678cc73274af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>6867443e2424b0107f44678cc73274b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created or Updated_1.current.requested_for.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Car Hire DL Validation">9c67443e2424b0107f44678cc732741f</flow>
+        <order>3</order>
+        <parent_ui_id>db0d9839-69e8-4723-a55c-785455c367d2</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>e867443e2424b0107f44678cc73274a5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <ui_id>f5b9ce71-01ef-4d13-85d6-c3c55735216d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e867443e2424b0107f44678cc73274a5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e867443e2424b0107f44678cc73274a5</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>a467443e2424b0107f44678cc73274a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <value>task</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e867443e2424b0107f44678cc73274a5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>e067443e2424b0107f44678cc73274a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <value>short_description=Please provide the car to user^assignment_group={"display":"Help Desk","value":"679434f053231300e321ddeeff7b12d8"}^state=2</value>
+        <variable display_value="Fields">6de09916c31332002841b63b12d3ae1b</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=9c67443e2424b0107f44678cc732741f^sys_idNOT IN6467443e2424b0107f44678cc7327460,a067443e2424b0107f44678cc732745b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c526ccba2424b0107f44678cc7327482</block>
+        <comment/>
+        <connected_to>db0d9839-69e8-4723-a55c-785455c367d2</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Car Hire DL Validation">9c67443e2424b0107f44678cc732741f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:51</sys_created_on>
+        <sys_id>6467443e2424b0107f44678cc7327460</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:51</sys_updated_on>
+        <ui_id>540ca4f6-3932-4727-a38d-f9d3e74d55d4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6467443e2424b0107f44678cc7327460"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>6467443e2424b0107f44678cc7327460</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:51</sys_created_on>
+        <sys_id>2c67443e2424b0107f44678cc7327463</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:51</sys_updated_on>
+        <value>Rejected</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6467443e2424b0107f44678cc7327460"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>6467443e2424b0107f44678cc7327460</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:51</sys_created_on>
+        <sys_id>a867443e2424b0107f44678cc7327463</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{eb698d12-884c-4125-aaa4-1267df0e1432.approval_state}}=rejected</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>6467443e2424b0107f44678cc7327460</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:51</sys_created_on>
+        <sys_id>e467443e2424b0107f44678cc7327463</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b026ccba2424b0107f44678cc7327477</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Car Hire DL Validation">9c67443e2424b0107f44678cc732741f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:51</sys_created_on>
+        <sys_id>a067443e2424b0107f44678cc732745b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:51</sys_updated_on>
+        <ui_id>db0d9839-69e8-4723-a55c-785455c367d2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a067443e2424b0107f44678cc732745b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a067443e2424b0107f44678cc732745b</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:51</sys_created_on>
+        <sys_id>2467443e2424b0107f44678cc732745f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:51</sys_updated_on>
+        <value>Approved</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a067443e2424b0107f44678cc732745b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>a067443e2424b0107f44678cc732745b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:51</sys_created_on>
+        <sys_id>a067443e2424b0107f44678cc732745f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{eb698d12-884c-4125-aaa4-1267df0e1432.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>a067443e2424b0107f44678cc732745b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:51</sys_created_on>
+        <sys_id>e867443e2424b0107f44678cc732745e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9c67443e2424b0107f44678cc732741f^sys_idNOT IN2867443e2424b0107f44678cc73274b4"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9c67443e2424b0107f44678cc732741f</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.pick_up_time}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:52</sys_created_on>
+        <sys_id>2867443e2424b0107f44678cc73274b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:52</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>30e1db33-3988-42fc-90fb-3b8da1f5bfb0</ui_id>
+    </sys_hub_pill_compound>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9c67443e2424b0107f44678cc732741f^sys_idNOT IN1467443e2424b0107f44678cc7327433,a467443e2424b0107f44678cc7327447,d467443e2424b0107f44678cc732743d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9c67443e2424b0107f44678cc732741f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:51</sys_created_on>
+        <sys_id>1467443e2424b0107f44678cc7327433</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Hire Management" source="x_cdltd_car_hire">805a5256246470107f44678cc732745d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9c67443e2424b0107f44678cc732741f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:51</sys_created_on>
+        <sys_id>a467443e2424b0107f44678cc7327447</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Hire Management" source="x_cdltd_car_hire">805a5256246470107f44678cc732745d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9c67443e2424b0107f44678cc732741f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 09:38:51</sys_created_on>
+        <sys_id>d467443e2424b0107f44678cc732743d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Hire Management" source="x_cdltd_car_hire">805a5256246470107f44678cc732745d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 09:38:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Car Hire" max_length="40" name="x_cdltd_car_hire_car_hire" sizeclass="4" type="collection">
+    <element extends="task" label="Car Hire" max_length="40" name="x_cdltd_car_hire_car_hire" sizeclass="10" type="collection">
         <element choice="1" hint="Select the brand of the car you like" label="Brand Name" max_length="40" name="brand_name" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Volkswagen" sequence="0" value="Volkswagen"/>
@@ -28,6 +28,7 @@
         <element attributes="edge_encryption_enabled=true" label="Location to be used" max_length="40" name="location_to_be_used" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Pick up Time" max_length="40" name="pick_up_time" type="glide_date_time"/>
         <element attributes="encode_utf8=false" label="Requested for" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Number of hours givent to DL Team to Validate DL" max_length="40" name="time_given_to_dl_team_to_validate_dl" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Travel Type" max_length="40" name="travel_type" type="string">
             <choice>
                 <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>

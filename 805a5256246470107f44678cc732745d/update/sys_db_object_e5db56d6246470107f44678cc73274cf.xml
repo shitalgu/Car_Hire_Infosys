@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
     <sys_db_object action="INSERT_OR_UPDATE">
-        <access>public</access>
-        <actions_access>true</actions_access>
-        <alter_access>true</alter_access>
+        <access>package_private</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
         <caller_access/>
-        <client_scripts_access>true</client_scripts_access>
+        <client_scripts_access>false</client_scripts_access>
         <configuration_access>false</configuration_access>
-        <create_access>true</create_access>
+        <create_access>false</create_access>
         <create_access_controls>false</create_access_controls>
         <delete_access>false</delete_access>
         <extension_model/>
@@ -16,7 +16,7 @@
         <name>x_cdltd_car_hire_car_hire</name>
         <number_ref display_value="CRI">e5db96d6246470107f44678cc7327465</number_ref>
         <provider_class/>
-        <read_access>true</read_access>
+        <read_access>false</read_access>
         <scriptable_table>false</scriptable_table>
         <super_class display_value="Task" name="task">97a482c6f43220107f4446973d0adbc3</super_class>
         <sys_class_code/>
@@ -25,16 +25,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-06-07 07:10:29</sys_created_on>
         <sys_id>e5db56d6246470107f44678cc73274cf</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Car Hire</sys_name>
         <sys_package display_value="Car Hire Management" source="x_cdltd_car_hire">805a5256246470107f44678cc732745d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Hire Management">805a5256246470107f44678cc732745d</sys_scope>
         <sys_update_name>sys_db_object_e5db56d6246470107f44678cc73274cf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-07 09:00:11</sys_updated_on>
-        <update_access>true</update_access>
+        <sys_updated_on>2021-06-08 07:13:42</sys_updated_on>
+        <update_access>false</update_access>
         <user_role/>
-        <ws_access>true</ws_access>
+        <ws_access>false</ws_access>
     </sys_db_object>
 </record_update>
